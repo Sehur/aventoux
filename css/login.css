@@ -1,0 +1,144 @@
+$white: #fff;
+$purple: #5F47B6;
+$lightGray: #9B9B9B;
+$darkGray: #4A4A4A;
+
+@mixin mainFont {
+  font-family: Lato, Helvetica, Arial;
+}
+
+
+html,
+body {
+  background-image: url(http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Wm9Tcmx5d2tueUE/style_imagery_bestpractices_narrative1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+    font-size: 35px;
+    font-size: 3.5rem;
+    @include mainFont;
+    font-weight: 400;
+}
+p {
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: #222326;
+    line-height: 18px;
+}
+a {
+    color: $purple;
+    font-weight: 600;
+    &:hover {
+        color: darken($purple, 10%);
+        cursor: pointer;
+    }
+}
+h6 {
+    font-size: 10px;
+    font-size: 1rem;
+    color: $lightGray;
+    letter-spacing: 1px;
+    line-height: 12px;
+    line-height: 1.2rem;
+}
+
+.btn--main {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: $purple;
+    border-radius: 3px;
+    color: $white;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+  &:hover {
+    background-color: darken($purple, 5%);
+  }
+}
+
+/*------------------------------------*\
+    #FORM
+\*------------------------------------*/
+
+.form--container {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding: 4rem;
+    background: #F9F9F9;
+    box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.30);
+    border-radius: 2px;
+    z-index: 999;
+}
+;
+.img--abstract {
+    position: absolute;
+    height: 217px;
+    width: 205px;
+    background-size: contain;
+    top: -70px;
+    top: -7rem;
+    right: -130px;
+    right: -13rem;
+    z-index: 0;
+}
+form label {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    height: 2rem;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    @include mainFont;
+    &:not(:last-child) input {
+        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
+    }
+    &:not(:first-child) {
+        margin-top: 4rem;
+    }
+}
+form label input {
+    background-color: transparent;
+    height: 26px;
+    height: 2.6rem;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $lightGray;
+    z-index: 2;
+    font-size: 15px;
+    font-size: 1.5rem;
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid $purple;
+    }
+}
+form label input:focus + span,
+form label input:valid + span {
+    top: -12px;
+    top: -1.2rem;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $lightGray;
+    letter-spacing: 0px;
+    letter-spacing: 0.07rem;
+}
+form label span {
+    position: absolute;
+    left: 2px;
+    left: 0.2rem;
+    top: 0;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    z-index: 1;
+}
