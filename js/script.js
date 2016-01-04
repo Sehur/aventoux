@@ -8,8 +8,13 @@ var App = angular.module('App', ['ngRoute'] );
                 templateUrl : 'pages/main.html',
                 controller  : 'mainCtrl'
             })
+            .when('/signup', {
+                templateUrl : '../signup.html',
+                controller  : 'signupCtrl'
+            })
 
-           
+
+
      });
 
 
@@ -17,4 +22,7 @@ var App = angular.module('App', ['ngRoute'] );
         // create a message to display in our view
         $scope.message = 'HOLA';
     });
-
+    App.controller('signupCtrl', function($scope,$http) {
+         // create a message to display in our view
+         $scope.message = 'HOLA';
+     });

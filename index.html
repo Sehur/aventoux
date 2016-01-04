@@ -2,67 +2,109 @@
     <head>
           <meta charset="utf-8">
 
-   
-          
-      <!--Import bootstrap-->
-   
       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-      <!--Let browser know website is optimized for mobile-->
+      <link rel="stylesheet" href="css/adonis.min.css" type="text/css">
+      <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+      <link href="css/roboto.min.css" rel="stylesheet">
+      <link href="css/material.min.css" rel="stylesheet">
+      <link href="css/ripples.min.css" rel="stylesheet">
+      <Link href="css/font-awesome.css" rel="stylesheet">
+      <!--
+      <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light&amp;lang=en" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+-->
+      <!--optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
        <script src="js/angular.js"></script>
        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="js/script.js"></script>
 
-  
+
 
     </head>
 
 
       <!--jQuery-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    
+
 <body>
 
-<nav class="navbar navbar-default container">
-  <div class="container-fluid">
-    <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#/">Aventoux</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Inicio</a></li>
-            <li><a href="#/">Smart Teambuilding</a></li>
-            <li><a href="#/">Servicios</a></li>
-            <li><a href="#/">Retorno de Inversión</a></li>
-            <li><a href="#/">Contacto</a></li>
-            
-          </ul>
-          
-        </div><!--/.nav-collapse -->
-      </div>
-  </div>
-</nav>
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="navbar-brand page-scroll" href="#page-top">Adonis</a> -->
+              <!-- Replace With Your Logo -->
+              <a class="navbar-brand navbar-logo page-scroll" href="#page-top"><img src="img/aventoux-logo.jpg" alt="Logo"></a>
+          </div>
 
-  
-  
+          <!-- Main Navigation -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll" href="#">Inicio</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Smart Teambuilding</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Servicios</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Escenarios</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#">Retorno de Inversion</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#contact">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+
+
+
+
     <div id="main">
 
           <div ng-view>
-
           </div>
     </div>
 
-      
-    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/adonis.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+
+
+
 </body>
 
 </html>
