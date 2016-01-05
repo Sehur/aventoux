@@ -9,12 +9,16 @@ var App = angular.module('App', ['ngRoute'] );
                 controller  : 'mainCtrl'
             })
             .when('/signup', {
-                templateUrl : '../signup.html',
+                templateUrl : 'pages/signup.html',
                 controller  : 'signupCtrl'
             })
             .when('/teambuilding', {
                 templateUrl : 'pages/teambuilding.html',
                 controller  : 'tbCtrl'
+            })
+            .when('/contact', {
+                templateUrl : 'pages/contact.html',
+                controller  : 'contactCtrl'
             })
 
 
@@ -33,3 +37,7 @@ var App = angular.module('App', ['ngRoute'] );
           // create a message to display in our view
           $scope.message = 'HOLA';
       });
+      App.controller('contactCtrl', function($scope,$http) {
+           // create a message to display in our view
+           $scope.message = 'HOLA';
+       });
