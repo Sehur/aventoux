@@ -12,11 +12,14 @@ var App = angular.module('App', ['ngRoute'] );
                 templateUrl : '../signup.html',
                 controller  : 'signupCtrl'
             })
+            .when('/teambuilding', {
+                templateUrl : 'pages/teambuilding.html',
+                controller  : 'tbCtrl'
+            })
 
 
 
      });
-
 
    App.controller('mainCtrl', function($scope,$http) {
         // create a message to display in our view
@@ -26,3 +29,7 @@ var App = angular.module('App', ['ngRoute'] );
          // create a message to display in our view
          $scope.message = 'HOLA';
      });
+     App.controller('tbCtrl', function($scope,$http) {
+          // create a message to display in our view
+          $scope.message = 'HOLA';
+      });
