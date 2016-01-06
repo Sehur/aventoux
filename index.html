@@ -11,6 +11,8 @@
       <link href="css/contact-3.css" rel="stylesheet">
       <link href="css/style-library-1.css" rel="stylesheet">
       <Link href="css/adonis.css" rel="stylesheet">
+      <link href="css/content-blocks-1.css" rel="stylesheet">
+      <link href="css/team-1.css" rel="stylesheet">
       <!--
       <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light&amp;lang=en" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -21,7 +23,8 @@
        <script src="js/angular.js"></script>
        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="js/script.js"></script>
-
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+      <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>s
 
 
     </head>
@@ -42,11 +45,17 @@
               </button>
               <!-- <a class="navbar-brand page-scroll" href="#page-top">Adonis</a> -->
               <!-- Replace With Your Logo -->
-              <a class="navbar-brand navbar-logo page-scroll" href="#"><img src="img/aventoux-logo.jpg" alt="Logo"></a>
+              <style media="screen">
+                .aventlogo{
+                  height: 50px;
+                  width: 100px;
+                }
+              </style>
+              <a class="navbar-brand navbar-logo page-scroll" href="#"><img class="aventlogo" src="img/aventouxLogo.png" alt="Logo"></a>
           </div>
 
           <!-- Main Navigation -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                   <li>
                       <a class="page-scroll" href="#/">Inicio</a>
@@ -64,7 +73,7 @@
                       <a class="page-scroll" href="#/">Retorno de Inversion</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#/">Contacto</a>
+                      <a class="page-scroll" href="#/contacto">Contacto</a>
                   </li>
               </ul>
           </div>
@@ -91,9 +100,6 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/adonis.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <script src="js/ripples.min.js"></script>
     <script src="js/material.min.js"></script>

@@ -4,12 +4,17 @@
 		<div class="container">
 				<div class="row services">
 					<div class="col-md-8 gallery-item-wrapper artwork creative">
-							<div class="gallery-item">
-									<div class="gallery-thumb">
-											<img src="http://placehold.it/700x250" class="img-responsive" alt="1st gallery Thumb">
-											<div class="image-overlay"></div>
+						<div style="height: 305px">
+							<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+								<uib-slide ng-repeat="slide in slides" active="slide.active">
+									<img ng-src="{{slide.image}}" style="margin:auto;">
+									<div class="carousel-caption">
+										<h4>Slide {{$index}}</h4>
+										<p>{{slide.text}}</p>
 									</div>
-							</div>
+								</uib-slide>
+							</uib-carousel>
+					</div>
 					</div>
 					<div class="col-md-4 gallery-item-wrapper artwork creative">
 							<div class="gallery-item">
